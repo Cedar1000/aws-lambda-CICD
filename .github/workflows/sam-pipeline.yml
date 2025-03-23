@@ -17,4 +17,4 @@ jobs:
       # sam build
       - run: sam build --use-container
       # sam deploy
-      - run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset --stack-name sam-hello-world --s3-bucket ced-lambda-deploy --capabilities CAPABILITY_IAM --region ${{ secrets.AWS_REGION }}
+      - run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset --s3-bucket ced-lambda-deploy --capabilities CAPABILITY_IAM --region ${{ secrets.AWS_REGION }}
