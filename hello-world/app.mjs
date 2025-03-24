@@ -16,7 +16,7 @@ export const lambdaHandler = async (event, context) => {
     return {
       statusCode: 200,
       body: JSON.stringify({
-        message: `hello world from cedar's function`,
+        message: `hello world from ${event.name}'s function`,
       }),
     };
   } catch (err) {
